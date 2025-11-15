@@ -1,74 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Học menu đa cấp với class và id</title>
-    <link rel="stylesheet" href="phuocmeiko.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Trang Spa</title>
+  <link rel="stylesheet" href="css.css">
 </head>
-
 <body>
-    <!-- Header -->
-    <div id="header">
-        <h1>Học class và ID</h1>
-        <p>Học menu đa cấp</p>
-    </div>
-    <!-- menu -->
-    <div id="menu">
-        <ul>
-            <li><a herf="#">Trang chủ</a></li>
-            <li>
-                <a herf="">Sản phẩm</a>
-                <ul>
-                    <li><a herf="">Điện thoại</a></li>
+  <div class="container">
+    <header>
+      <div class="logo">Trang Spa</div>
+      <nav>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Bộ sưu tập</a>
+        <a href="#">Blog</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+    </header>
 
-                    <!-- Laptop có menu con -->
-                    <li>
-                        <a href="#">Laptop</a>
-                        <ul>
-                            <li><a href="">Dell</a></li>
-                            <li><a href="">HP</a></li>
-                            <li><a href="">ASUS</a></li>
-                        </ul>
-                    </li>
+    <section class="hero">
+      <div>
+        <h1>Chăm sóc da chuẩn salon — Giao hàng toàn quốc</h1>
+        <p>Khám phá bộ sưu tập serum, kem dưỡng và mặt nạ thiên nhiên — chọn lọc từ thành phần an toàn, phù hợp cho mọi loại da.</p>
+        <a href="#products">Mua sắm ngay</a>
+      </div>
+      <div class="hero-img">BỘ SƯU TẬP MỚI</div>
+    </section>
 
-                    <li><a href="">Phụ kiện</a></li>
-                </ul>
-            </li>
-            <li><a href="">Dịch vụ</a></li>
-            <li><a href="">Tin tức</a></li>
-            <li><a href="">Liên hệ</a></li>
-        </ul>
+    <div class="controls">
+      <div class="chip">Tất cả</div>
+      <div class="chip">Serum</div>
+      <div class="chip">Dưỡng ẩm</div>
+      <div class="chip">Mặt nạ</div>
+      <div class="chip">Sale</div>
     </div>
-    <!-- Nội dung -->
-    <div id="main">
-        <div id="content" class="box">
-            <h2 class="title">Nội dung trang web</h2>
-            <img src="assets/img/anh9.jpg" class="img1" alt="anh9">
-            <p>Đây là phần nội dung chính của trâng web
-                Nó sử dụng <b> id="content"</b> để định vị bố cục <b>class="box"</b> để định dạng khung trắng
-            </p>
-            <p>
-                Thanh menu phía trên <b>menu đa cấp</b>
-                khi trỏ chuột vào sẽ tự động hiện menu con ra
-            </p>
-            <a href="" class="btn">Xem thêm</a>
+
+    <main id="products" class="grid">
+      <article class="card">
+        <div class="media">
+          <span class="badge">Hot</span>
+          <img src="img/ordinary.jpg" alt="Serum Ordinary">
         </div>
-        <div id="sidebar" class="box">
-            <h3>Sidebar</h3>
-            <img src="assets/img/phuocmeiko.jpg" class="img2" alt="phuocmeiko">
-            <p>
-                Đây là phần sidebar. Cũng dùng  <b>class.box</b>
-                Để có cùng phong cách với nội dung chính
-            </p>
-            <a href="" class="btn">Liên hệ</a>
+        <h3 class="title">Serum Ordinary </h3>
+        <p class="desc"> Serum Niacinamide thành phần gồm có Niacinamide và kẽm, trong khi serum tẩy tế bào chết AHA 30% + BHA 2% chứa các loại AHA (như Glycolic Acid, Lactic Acid) và BHA (Salicylic Acid). <p>
+        <div class="card-footer">
+          <div class="price">350.000đ</div>
+          <button class="btn btn-primary">Thêm vào giỏ</button>
         </div>
-    </div>
-    <!-- footer -->
-    <div id="footer">
-        <p>© 2025 -Trần Hữu Phước</p>
-    </div>
+      </article>
+
+      <article class="card">
+        <div class="media">
+          <img src="img/serumm.jpg" alt="Serum Caudalie">
+        </div>
+        <h3 class="title">Serum Caudalie </h3>
+        <p class="desc">Serum Caudalie gồm các thành phần chính như Viniferine (chiết xuất từ nhựa cây nho, giúp làm sáng da và mờ thâm nám), squalane từ ô liu (dưỡng ẩm sâu), và vitamin E (chống oxy hóa)</p>
+        <div class="card-footer">
+          <div class="price">249.000đ</div>
+          <button class="btn btn-primary">Thêm vào giỏ</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="media">
+          <img src="img/innisfree.jpg" alt="Mặt nạ đất sét">
+        </div>
+        <h3 class="title">Serum Innisfree</h3>
+        <p class="desc">Serum Innisfree gồm các thành phần như: trà xanh (dưỡng ẩm, phục hồi da, làm sáng), vitamin C (dưỡng sáng, mờ thâm), retinol cica (phục hồi, làm dịu cho da nhạy cảm), pomegranate (làm săn chắc), black green tea (chống lão hóa)</p>
+        <div class="card-footer">
+          <div class="price">179.000đ</div>
+          <button class="btn btn-primary">Thêm vào giỏ</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="media">
+          <span class="badge">Mới</span>
+          <img src="img/serumtrimun.jpg" alt="Tinh chất Hyaluronic">
+        </div>
+        <h3 class="title">Serum Kiehl's </h3>
+        <p class="desc"> Serum Kiehl's gồm các thành phần: Vitamin C (\(3-O-Ethyl\ Ascorbic\ Acid\)), Niacinamide (Vitamin B3), Peptide, Salicylic Acid (BHA) và các thành phần dưỡng ẩm như Glycerin, chiết xuất hoa mẫu đơn và Bạch Dương Trắng. </p>
+        <div class="card-footer">
+          <div class="price">320.000đ</div>
+          <button class="btn btn-primary">Thêm vào giỏ</button>
+        </div>
+      </article>
+         <article class="card">
+        <div class="media">
+          <span class="badge">Hot</span>
+          <img src="img/ordinary.jpg" alt="Serum Ordinary">
+        </div>
+        <h3 class="title">Serum Ordinary </h3>
+        <p class="desc"> Serum Niacinamide thành phần gồm có Niacinamide và kẽm, trong khi serum tẩy tế bào chết AHA 30% + BHA 2% chứa các loại AHA (như Glycolic Acid, Lactic Acid) và BHA (Salicylic Acid). <p>
+        <div class="card-footer">
+          <div class="price">350.000đ</div>
+          <button class="btn btn-primary">Thêm vào giỏ</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="media">
+          <img src="img/serumm.jpg" alt="Serum Caudalie">
+        </div>
+        <h3 class="title">Serum Caudalie </h3>
+        <p class="desc">Serum Caudalie gồm các thành phần chính như Viniferine (chiết xuất từ nhựa cây nho, giúp làm sáng da và mờ thâm nám), squalane từ ô liu (dưỡng ẩm sâu), và vitamin E (chống oxy hóa)</p>
+        <div class="card-footer">
+          <div class="price">249.000đ</div>
+          <button class="btn btn-primary">Thêm vào giỏ</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="media">
+          <img src="img/innisfree.jpg" alt="Mặt nạ đất sét">
+        </div>
+        <h3 class="title">Serum Innisfree</h3>
+        <p class="desc">Serum Innisfree gồm các thành phần như: trà xanh (dưỡng ẩm, phục hồi da, làm sáng), vitamin C (dưỡng sáng, mờ thâm), retinol cica (phục hồi, làm dịu cho da nhạy cảm), pomegranate (làm săn chắc), black green tea (chống lão hóa)</p>
+        <div class="card-footer">
+          <div class="price">179.000đ</div>
+          <button class="btn btn-primary">Thêm vào giỏ</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="media">
+          <span class="badge">Mới</span>
+          <img src="img/serumtrimun.jpg" alt="Tinh chất Hyaluronic">
+        </div>
+        <h3 class="title">Serum Kiehl's </h3>
+        <p class="desc"> Serum Kiehl's gồm các thành phần: Vitamin C (\(3-O-Ethyl\ Ascorbic\ Acid\)), Niacinamide (Vitamin B3), Peptide, Salicylic Acid (BHA) và các thành phần dưỡng ẩm như Glycerin, chiết xuất hoa mẫu đơn và Bạch Dương Trắng. </p>
+        <div class="card-footer">
+          <div class="price">320.000đ</div>
+          <button class="btn btn-primary">Thêm vào giỏ</button>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      © 2025 TrangSpa — Thiên nhiên &amp; Chăm sóc. Giao hàng toàn quốc.
+    </footer>
+  </div>
 </body>
+</html>
 
-</html>                                                                                                                                                                                                                                                                                                    
